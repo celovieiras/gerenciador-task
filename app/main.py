@@ -14,21 +14,7 @@ app = FastAPI(
     redoc_url=None,
     contact={
         "name": "Marcelo Vieira da Silva",
-        "email": "celovieirads@gmail.com"    },
-    license_info={
-        "name": "MIT",
-        "url": "https://opensource.org/licenses/MIT"
-    },
-    servers=[
-        {
-            "url": "http://localhost:8000",
-            "description": "Development server"
-        },
-        {
-            "url": "https://users.luanfernandes.dev",
-            "description": "Production server"
-        }
-    ],
+        "email": "celovieirads@gmail.com"    }
 )
 
 app.include_router(task_router)
